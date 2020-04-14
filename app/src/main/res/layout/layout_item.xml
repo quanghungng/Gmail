@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/image_avatar"
+        android:visibility="gone"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/thumb1">
+    </ImageView>
+    <TextView
+        android:id="@+id/round"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/round_background"
+        android:text="T"
+        android:layout_marginRight="10dp"
+        android:textSize="32sp"
+        android:gravity="center">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/round"
+        android:layout_marginLeft="5dp"
+        android:text="Quang Hung"
+        android:layout_alignTop="@id/image_avatar"
+        android:layout_alignBottom="@id/image_avatar"
+        android:gravity="center"
+        android:textSize="22sp">
+    </TextView>
+    <TextView
+        android:id="@+id/text_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/round"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="50dp"
+        android:text="Friendship is an emotion of care, mutual trust, and fondness among two persons."
+        android:layout_alignTop="@id/image_avatar"
+        android:layout_alignBottom="@id/image_avatar"
+        android:textSize="14sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="12:00"
+        android:layout_marginRight="10dp"
+        android:textSize="16sp">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/image_favourite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_star_normal"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        ></ImageView>
+
+</RelativeLayout>
